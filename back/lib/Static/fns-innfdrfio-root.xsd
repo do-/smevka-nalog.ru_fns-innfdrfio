@@ -52,7 +52,7 @@
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
-			<xs:attribute name="IDRequest " type="fns:IDRequestType" use="required">
+			<xs:attribute name="IDRequest" type="fns:IDRequestType" use="required">
 				<xs:annotation>
 					<xs:documentation>Идентификатор запроса, сформированный запрашивающей стороной</xs:documentation>
 				</xs:annotation>
@@ -79,7 +79,7 @@
 					</xs:simpleType>
 				</xs:element>
 			</xs:choice>
-			<xs:attribute name="IDRequest " type="fns:IDRequestType" use="optional">
+			<xs:attribute name="IDRequest" type="fns:IDRequestType" use="optional">
 				<xs:annotation>
 					<xs:documentation>Идентификатор запроса, сформированный запрашивающей стороной</xs:documentation>
 				</xs:annotation>
