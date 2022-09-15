@@ -29,9 +29,31 @@ get_response_of_i_n_n_f_d_r_f_i_o:
     function () {
 
     	const {rq: {data: {IDRequest}}} = this
+
+		const k = [
+
+			[7, 2, 4, 10, 3, 5, 9, 4, 6, 8],
+
+			[3, 7, 2, 4, 10, 3, 5, 9, 4, 6, 8],
+
+		]
+
+    	let PhysicalPersonINN = '', s = [0, 0]
     	
-    	let PhysicalPersonINN = '520205004556'
+    	for (let i = 0; i < 10; i ++) {
     	
+    		const d = Math.floor (10 * Math.random ())
+    	
+			for (let j = 0; j < 2; j ++) s [j] += k [j] [i] * d
+	
+    		PhysicalPersonINN += String (d)
+    	
+    	}
+    	
+    	const d = s [0] % 11 % 10; s [1] += k [1] [10] * d; PhysicalPersonINN += String (d)
+    	
+    	PhysicalPersonINN += String (s [1] % 11 % 10)
+    	    	
     	return {INNFDRFIOResponse: {IDRequest, PhysicalPersonINN}}
 
     },
