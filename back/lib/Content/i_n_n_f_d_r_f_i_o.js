@@ -58,10 +58,6 @@ get_response_of_i_n_n_f_d_r_f_i_o:
     	
     		INNFDRFIOResponse: {IDRequest, PhysicalPersonINN},
 
-    		_FSAttachmentsList: [
-    			{uuid: '35c3561e-cd4f-4d38-ae7b-bcbd3f7047eb', FileName: '/35c3561e-cd4f-4d38-ae7b-bcbd3f7047eb.zip'},
-    		],
-
     	}
 
     },
